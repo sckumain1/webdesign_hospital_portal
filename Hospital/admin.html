@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>HOSPITAL PORTAL </title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+ <DIV  STYLE="WIDTH:20%;HEIGHT:30PX;FLOAT:RIGHT;">
+    <a href="login.html"> <BUTTON>LOGIN</BUTTON></a>
+    <a href="admin.html"><BUTTON> ADMIN</BUTTON> </a>
+  </DIV>
+<div id="header">
+<div id="logo">
+	 <h1><a href="#"> <b>Hospital Portal </b></a></h1>
+	<br>
+	<br>
+</div>
+<br>
+<marquee> <h3 style="background-color:#CC3399"> <U>*** WELCOME IN OUR HOSPITAL***</U></h3></marquee>
+</div>
+<center>
+<!---------------------------------------------display current date-------------------------------->
+<h2>
+<font color="#000099">
+<script type="text/javascript">
+var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+var d = new Date();
+var curr_date = d.getDate();
+var curr_month = d.getMonth();
+var curr_year = d.getFullYear();
+document.write(curr_date + "-" + m_names[curr_month] + "-" + curr_year);
+</script>
+</FONT>
+</h2>
+</center>
+
+    <!--                  BUTTONS ---------------------------------------------->
+
+ <a href="home.html"><BUTTON>ABOUT US</BUTTON> </a>
+ <a href="department.html"><BUTTON>DEPARTMENTS</BUTTON> </a>
+ <a href="patient.html"><BUTTON>PATIENT AND VISITORS</BUTTON> </a>
+ <a href="help.html"><BUTTON>HELP</BUTTON> </a>
+ <a href="contact.html" ><BUTTON>CONTACT US</BUTTON></a>
+ 
+
+  
+  <br>
+  <br>
+  <br>
+
+<div align="left">
+<form  action="admin_valid.php" method="post">
+<table>
+<caption> ADMIN LOGIN</caption>
+<tr>
+<td>ADMIN  TYPE*</td> <br>
+<td><input type="text" name="type" value="admin"></td></tr>
+<tr><br>
+<tr>
+<td>EAIL ID*</td> <br>
+<td><input type="text" name="admin" value="admin"></td></tr>
+<tr><br>
+<td>PASSWORD*</td> <br>
+<td><input type="password" name="password" value="password"></td></tr><br>
+<tr>
+<td>
+<input type="submit" name="submit" value="submit">
+</td>
+<td><input type="reset" value="reset"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
